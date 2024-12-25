@@ -9,7 +9,7 @@ header .banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(50% 192.42% at 50% 50%, #FFF3C1 0%, #EBD790 100%);
+  background: radial-gradient(50% 192.42% at 50% 50%, #fff3c1 0%, #ebd790 100%);
 }
 header .banner__logo {
   display: flex;
@@ -22,7 +22,7 @@ header .banner__logo div {
 header .banner__logo div img {
   height: 80px;
 }
-header .navbar {
+header .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,13 +32,18 @@ header .navbar {
   padding-right: 50px;
   background-color: white;
 }
-header .navbar__menu {
+header .menu .menu-link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
 }
-header .navbar__menu .item1 {
+header .menu .menu-link .menu-item {
+  position: relative;
+  cursor: pointer;
+}
+header .menu .menu-link .menu-item a {
+  text-decoration: none;
   font-family: Myriad Pro;
   font-size: 16px;
   font-weight: 700;
@@ -46,18 +51,51 @@ header .navbar__menu .item1 {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  margin: 0;
   color: #252525;
+}
+header .menu .menu-link .menu-item__active a {
+  color: #f24b18;
+}
+header .menu .menu-link .menu-item a:hover {
+  text-decoration: underline;
+}
+header .menu .menu-link .menu-item .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 10;
+}
+header .menu .menu-link .menu-item .dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
   text-decoration: none;
+  white-space: nowrap;
 }
-header .navbar__menu .item1--active {
-  color: #F24B18;
+header .menu .menu-link .menu-item .dropdown a:hover {
+  background-color: #f5f5f5;
 }
-header .navbar button {
+header .menu .menu-link .menu-item:hover .dropdown {
+  display: block;
+}
+header .menu .button-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+header .menu .button-register button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 56px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   border-radius: 16px;
   border: 0;
   color: white;
@@ -73,6 +111,16 @@ header .navbar button {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   width: 189px;
+}
+header .menu .button-register span {
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
 }
 
 section {
@@ -197,7 +245,7 @@ section .box-even .box-round .event-round {
   gap: 24px;
   width: 100%;
   padding: 50px 0;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 section .box-even .box-round .event-round .information-round {
   display: flex;
@@ -262,7 +310,7 @@ section .box-even .box-round .event-round .detail-even button {
   padding: 16px;
   border: 0;
   border-radius: 16px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   font-family: Myriad Pro;
   font-size: 16px;
   font-weight: 700;
@@ -271,7 +319,7 @@ section .box-even .box-round .event-round .detail-even button {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 section .box-even .box-round .event-round .detail-even:hover button {
@@ -331,7 +379,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 565px;
-  background: radial-gradient(50% 192.42% at 50% 50%, #FFF3C1 0%, #EBD790 100%);
+  background: radial-gradient(50% 192.42% at 50% 50%, #fff3c1 0%, #ebd790 100%);
   width: 100%;
   padding: 50px 0;
 }
@@ -397,10 +445,9 @@ footer .footer-main .box-main .footer-body .leader-organizing .logo1 .imgs1 {
 footer .footer-main .box-main .footer-body .active-organizing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 24px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 30px;
   padding: 30px 30px;
 }
@@ -417,7 +464,7 @@ footer .footer-main .box-main .footer-body .active-organizing h4 {
 }
 footer .footer-main .box-main .footer-body .active-organizing .box-active {
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -478,6 +525,7 @@ footer .footer-main .box-main .ends {
   justify-content: center;
   padding: 4%;
   background-image: url("../imgs/image 1.png");
+  background-size: cover;
 }
 #register-main .banner-background .box-container .box-banner {
   display: flex;
@@ -498,7 +546,7 @@ footer .footer-main .box-main .ends {
 }
 #register-main .banner-background .box-container .box-banner .box-title h1 {
   margin: 0;
-  color: #D40000;
+  color: #d40000;
   font-size: 24px;
   font-weight: 700;
   line-height: 26.4px;
@@ -530,8 +578,8 @@ footer .footer-main .box-main .ends {
 }
 #register-main .banner-background .box-container .box-banner .box-form .note-banner .lines {
   height: 20px;
-  border: 2px solid #FF69B4;
-  background-color: #FF69B4;
+  border: 2px solid #ff69b4;
+  background-color: #ff69b4;
   display: flex;
 }
 #register-main .banner-background .box-container .box-banner .box-form .note {
@@ -585,7 +633,7 @@ footer .footer-main .box-main .ends {
 #register-main .banner-background .box-container .box-banner .box-form form button {
   grid-column: 1/3;
   padding: 14px 20px 14px 20px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   border-radius: 8px;
   font-family: Myriad Pro;
   font-size: 16px;
@@ -594,7 +642,7 @@ footer .footer-main .box-main .ends {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   border: 0;
 }
 
@@ -703,7 +751,7 @@ footer .footer-main .box-main .ends {
 #confirm-main .banner-background .box-container .box-banner .box-form form button {
   grid-column: 1/1;
   padding: 14px 20px 14px 20px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   border-radius: 8px;
   font-family: Myriad Pro;
   font-size: 16px;
@@ -712,7 +760,7 @@ footer .footer-main .box-main .ends {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   border: 0;
 }
 
@@ -816,7 +864,7 @@ footer .footer-main .box-main .ends {
   border-radius: 8px;
 }
 #activeOTP-main .banner-background .box-container .box-banner .box-form form .item-input input .color-box {
-  background-color: #F0F2F5;
+  background-color: #f0f2f5;
 }
 #activeOTP-main .banner-background .box-container .box-banner .box-form form .emails {
   grid-column: 1/3;
@@ -824,7 +872,7 @@ footer .footer-main .box-main .ends {
 #activeOTP-main .banner-background .box-container .box-banner .box-form form button {
   grid-column: 1/1;
   padding: 14px 20px 14px 20px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   border-radius: 8px;
   font-family: Myriad Pro;
   font-size: 16px;
@@ -833,7 +881,7 @@ footer .footer-main .box-main .ends {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   border: 0;
 }
 
@@ -930,10 +978,10 @@ footer .footer-main .box-main .ends {
   padding: 16px;
   gap: 8px;
   border-radius: 8px;
-  background-color: #F0F2F5;
+  background-color: #f0f2f5;
 }
 #verify-main .banner-background .box-container .box-banner .box-form form .item-input input .color-box {
-  background-color: #F0F2F5;
+  background-color: #f0f2f5;
 }
 #verify-main .banner-background .box-container .box-banner .box-form form .item-input .send {
   font-family: Myriad Pro;
@@ -944,7 +992,7 @@ footer .footer-main .box-main .ends {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   border: 0;
-  color: #1A82B3;
+  color: #1a82b3;
   background-color: white;
 }
 #verify-main .banner-background .box-container .box-banner .box-form form .emails {
@@ -968,13 +1016,13 @@ footer .footer-main .box-main .ends {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #F24B18;
-  border: 1px solid #F24B18;
+  color: #f24b18;
+  border: 1px solid #f24b18;
 }
 #verify-main .banner-background .box-container .box-banner .box-form form .btn-box .btn__active {
   grid-column: 1/1;
   padding: 14px 20px 14px 20px;
-  background-color: #F24B18;
+  background-color: #f24b18;
   border-radius: 8px;
   font-family: Myriad Pro;
   font-size: 16px;
@@ -983,6 +1031,6 @@ footer .footer-main .box-main .ends {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   border: 0;
 }
