@@ -1,0 +1,1027 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 9999;
+}
+header #header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+header #header-container .logo-betia {
+  margin-left: 20px;
+}
+header #header-container .menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 20px;
+}
+header #header-container .menu-nav .item-menu {
+  position: relative;
+  cursor: pointer;
+}
+header #header-container .menu-nav .item-menu a {
+  text-decoration: none;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #252525;
+}
+header #header-container .menu-nav .item-menu a:hover {
+  color: blueviolet;
+}
+header #header-container .menu-nav .item-menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 10;
+}
+header #header-container .menu-nav .item-menu .dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+header #header-container .menu-nav .item-menu:hover .dropdown {
+  display: block;
+}
+header #header-container .menu-nav .menu-item .dropdown a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+header #header-container .menu-nav .btn-buy {
+  background-color: #36BDF8;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #FFFFFF;
+  border: 0;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+section .background-main img {
+  width: 100%;
+}
+section #page-container {
+  display: flex;
+  flex-direction: column;
+}
+section #page-container .voucher-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section #page-container .voucher-page .item-icon {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  z-index: 1;
+}
+section #page-container .voucher-page .item-icon img {
+  width: 206.88px;
+  height: 184px;
+}
+section #page-container .voucher-page .form-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 360px;
+}
+section #page-container .voucher-page .form-info .item-iphone {
+  width: 50%;
+}
+section #page-container .voucher-page .form-info .item-iphone img {
+  width: 100%;
+}
+section #page-container .voucher-page .form-info .box-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFE354;
+  padding: 40px;
+  gap: 48px;
+  width: 50%;
+  border-radius: 16px;
+}
+section #page-container .voucher-page .form-info .box-form .box-title p {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #F63B2C;
+  margin: 0;
+}
+section #page-container .voucher-page .form-info .box-form .box-title h3 {
+  font-family: Myriad Pro;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+section #page-container .voucher-page .form-info .box-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+section #page-container .voucher-page .form-info .box-form form .item-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+section #page-container .voucher-page .form-info .box-form form .item-label label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+section #page-container .voucher-page .form-info .box-form form .item-label input {
+  padding: 12px 16px 12px 16px;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  border: 0;
+}
+section #page-container .voucher-page .form-info .box-form form .btn-register {
+  background-color: #36BDF8;
+  padding: 12px 20px 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+section #page-container .voucher-page .item-plane {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  z-index: 1;
+  bottom: 310px;
+}
+section #page-container .voucher-page .item-plane img {
+  width: 274.75px;
+  height: 330.27px;
+}
+section #page-container .combo-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  background-color: #F8F8F8;
+  padding: 80px 0;
+}
+section #page-container .combo-book__titles p {
+  color: #F63B2C;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+section #page-container .combo-book__titles h1 {
+  font-family: Myriad Pro;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .combo-book__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+section #page-container .combo-book__btns .item-button {
+  border: 1px solid #36BDF8;
+  padding: 11px 20px 11px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: white;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+}
+section #page-container .combo-book__btns .item-button__active {
+  border: 1px solid #36BDF8;
+  padding: 11px 20px 11px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #36BDF8;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+section #page-container .combo-book__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+}
+section #page-container .combo-book__details .item-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px 30px 0px;
+  gap: 30px;
+}
+section #page-container .combo-book__details .item-details .item-imgs {
+  width: 50%;
+}
+section #page-container .combo-book__details .item-details .item-imgs img {
+  width: 100%;
+}
+section #page-container .combo-book__details .item-details .item-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+section #page-container .combo-book__details .item-details .item-title h5 {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+}
+section #page-container .combo-book__details .item-details .item-title p {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+}
+section #page-container .combo-book .continues {
+  background-color: #FF6000;
+  width: 25%;
+  padding: 11px 20px 11px 20px;
+  border: 0;
+  border-radius: 50px;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+section #page-container .achievements-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  background-color: #FFE974;
+  padding: 80px 0;
+  width: 100%;
+}
+section #page-container .achievements-table__titles p {
+  color: #F63B2C;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+section #page-container .achievements-table__titles h1 {
+  font-family: Myriad Pro;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .achievements-table__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+section #page-container .achievements-table__btns .item-button {
+  border: 1px solid #36BDF8;
+  padding: 11px 20px 11px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: white;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+}
+section #page-container .achievements-table__btns .item-button__active {
+  border: 1px solid #36BDF8;
+  padding: 11px 20px 11px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #36BDF8;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+section #page-container .achievements-table__details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+}
+section #page-container .achievements-table__details .item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCE4EC;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 50px;
+  width: 25%;
+}
+section #page-container .achievements-table__details .item-details h6 {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #105296;
+  margin: 0;
+}
+section #page-container .achievements-table__details .item-details .box-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 0 20px 20px 20px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+section #page-container .achievements-table__details .item-details .box-achievement span {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #252525;
+}
+section #page-container .achievements-table__details .item-details .box-achievement p {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .achievements-table__details .item-details .box-achievement p strong {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #105296;
+}
+section #page-container .achievements-table .continues {
+  background-color: #FF6000;
+  height: 50px;
+  width: 25%;
+  padding: 11px 20px 11px 20px;
+  border: 0;
+  border-radius: 50px;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+section #page-container .hint-diffirence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  background-color: #F8F8F8;
+}
+section #page-container .hint-diffirence .hint-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 62.5%;
+}
+section #page-container .hint-diffirence .hint-container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 65%;
+}
+section #page-container .hint-diffirence .hint-container .title p {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #F63B2C;
+}
+section #page-container .hint-diffirence .hint-container .title h1 {
+  font-family: Myriad Pro;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+section #page-container .hint-diffirence .hint-container .hint-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card1 .card-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 13%;
+  top: 56px;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card1 .card-title h3 {
+  font-family: Myriad Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card2 .girl-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #FFE354;
+  bottom: 0px;
+  left: 20px;
+  width: 70%;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card2 .girl-title h3 {
+  margin: 0;
+  font-family: Myriad Pro;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card2 .girl-title p {
+  font-family: Myriad Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card3 .card-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 13%;
+  top: 56px;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card3 .card-title h3 {
+  font-family: Myriad Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  border-radius: 50px;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card4 img {
+  border-radius: 50px;
+}
+section #page-container .hint-diffirence .hint-container .hint-box .card4 .card-detail {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 250px;
+  padding: 0px 13%;
+  top: 56px;
+}
+section #page-container .news-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section #page-container .news-event .detail-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  gap: 80px;
+}
+section #page-container .news-event .detail-event .title-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+section #page-container .news-event .detail-event .title-event p {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #F63B2C;
+  margin: 0;
+}
+section #page-container .news-event .detail-event .title-event h1 {
+  font-family: Myriad Pro;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+section #page-container .news-event .detail-event .box-event {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+section #page-container .news-event .detail-event .box-event .item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+}
+section #page-container .news-event .detail-event .box-event .item-box .news-sum {
+  padding: 30px;
+  gap: 10px;
+  border-radius: 0px 0px 50px 50px;
+  background-color: #F8F8F8;
+}
+section #page-container .news-event .detail-event .box-event .item-box .news-sum__header span {
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #B8BBBE;
+  margin: 0;
+}
+section #page-container .news-event .detail-event .box-event .item-box .news-sum__header p {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .news-event .detail-event .box-event .item-box .news-sum__views p {
+  font-family: Inter;
+  font-size: 15.25px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #A0A5A8;
+  margin: 0;
+}
+section #page-container .news-event .detail-event .finds {
+  padding: 11px 20px 11px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #FF6000;
+  border: 0;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+  width: 50%;
+}
+section #page-container .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section #page-container .cards-container .box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+section #page-container .cards-container .box-card .child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section #page-container .cards-container .box-card .box-package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #FFE354;
+  width: 100%;
+  height: auto;
+}
+section #page-container .cards-container .box-card .box-package .package-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 96%;
+  margin-top: 20px;
+  gap: 50px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .title-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  flex-direction: column;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .title-detail p {
+  font-family: Myriad Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00477C;
+  margin: 0;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .title-detail h3 {
+  font-family: Myriad Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00477C;
+  margin: 0;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  background-color: white;
+  border-radius: 50px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__header h3 {
+  font-family: Myriad Pro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__header span {
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__body h3 {
+  font-family: Myriad Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__body .voucher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__body .voucher h5 {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: red;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__body .voucher del {
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-decoration-line: line-through;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #A0A5A8;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__footer a {
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #36BDF8;
+}
+section #page-container .cards-container .box-card .box-package .package-detail .package-card .item-around .item-card__footer button {
+  width: 100%;
+  border-radius: 50px;
+  background-color: #36BDF8;
+  border: 0;
+  padding: 24px 0px 24px 0px;
+  font-family: Myriad Pro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+
+footer #footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 378px;
+}
+footer #footer-container .box-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+footer #footer-container .box-footer .infor-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+footer #footer-container .box-footer .infor-address h4 {
+  font-family: Myriad Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: #121D26;
+}
+footer #footer-container .box-footer .infor-address .address p {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+footer #footer-container .box-footer .infor-address .producer p {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
+footer #footer-container .box-footer .infor-address .item-edn p {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121D26;
+  margin: 0;
+}
